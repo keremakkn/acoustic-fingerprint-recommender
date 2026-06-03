@@ -1,0 +1,104 @@
+# ============================================================
+#  Acoustic Fingerprint Recommender — .gitignore
+# ============================================================
+
+# ------------------------------------------------------------------
+# 🔴 CRITICAL: Heavy ML artifacts — DO NOT commit these
+# ------------------------------------------------------------------
+# Trained Keras models (can be 75 MB+)
+*.keras
+*.h5
+*.pb
+saved_model/
+
+# Pre-computed embedding libraries (binary pickle files)
+*.pkl
+
+# GTZAN dataset & raw audio files
+Data/
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.aac
+
+# Jupyter notebook checkpoints and outputs
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ------------------------------------------------------------------
+# Environment & Secrets
+# ------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# ------------------------------------------------------------------
+# Node.js / Next.js
+# ------------------------------------------------------------------
+node_modules/
+.next/
+out/
+.cache/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# ------------------------------------------------------------------
+# Package manager lock files (keep pnpm-lock.yaml, ignore others)
+# ------------------------------------------------------------------
+yarn.lock
+package-lock.json
+
+# ------------------------------------------------------------------
+# IDEs & Editors
+# ------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------------
+# Logs & Temporary files
+# ------------------------------------------------------------------
+*.log
+logs/
+tmp/
+temp/
+
+# ------------------------------------------------------------------
+# Vercel / v0 sandbox internals
+# ------------------------------------------------------------------
+.vercel/
+.snowflake/
+.v0-trash/
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
